@@ -1,0 +1,3 @@
+[submodule "code/halftone"]
+	path = code/halftone
+	url = https://github.com/philgyford/python-halftone
