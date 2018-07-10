@@ -109,7 +109,7 @@ if __name__ == "__main__":
         try:
             threshold = sys.argv[3]
         except:
-            threshold = 127.5
+            threshold = 127
         hexify(path, int(threshold))
     if function == "shrinkify":
         shrinkify(path)
@@ -127,7 +127,7 @@ if __name__ == "__main__":
         try:
             threshold = sys.argv[3]
         except:
-            threshold = 127.5
+            threshold = 127
         blackandwhiteify(path, threshold)
     if function == "greyify":
         greyify(path)
