@@ -53,6 +53,11 @@ def hexify(path, threshold):
 
     Image.fromarray(image).save(out_path + "hexified_threshold=%i" % threshold + "_" + image_name + ".png")
 
+    with open(out_path + 'hexified_' + image_name + ".h", "w") as header_out:
+        header_out.write('extern const unsigned char %s[];' % image_name)
+
+
+
 def blackandwhiteify(path, threshold=200):
     image_name = path.replace("source_images/", '').replace(".png", '')
     if not os.path.exists("output/" + image_name):
