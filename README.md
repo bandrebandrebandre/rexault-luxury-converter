@@ -12,7 +12,7 @@
 
 
 
-A premium tool for luxuriously converting and modifying images for the Rexault product line. Aurum Super Omnia.
+A premium tool for luxuriously converting and modifying images for the Rexault product line.
 
 The core feature of rexconvert is its 'hexify' option, which takes a 200x200 image file (png?) and outputs a .cpp
 file containing a black and white hex representation of it which, which can then be uploaded to a Bespoke Digital Pet
