@@ -18,9 +18,7 @@ The core feature of rexconvert is its 'hexify' option, which takes a 200x200 ima
 file containing a black and white hex representation of it, which can then be uploaded to a Bespoke Digital Pet
 Development Kit Mach 1.
 
-## Installation
-
-(Assumes macOS)
+## macOS Installation
 
     cd ~
     git clone https://github.com/bandrebandrebandre/rexault-luxury-converter.git
@@ -29,12 +27,25 @@ If git is not installed on your computer, you should be prompted to install it.
 
 You may need to install pip packages also...not sure which ones yet.
 
+## Windows Installation
+
+Install python 2.7. Download and install the "Windows x86 MSI Installer (2.7.0) (sig)" option from  https://www.python.org/download/releases/2.7/
+
+install numpy and scipy. Not sure how to do that on windows yet.
+
 ## Basic usage
+
+MacOS users should use the following:
 
     cd rexault-luxury-converter
     ./rexconvert hexify <path/to/source/image.png> <value-threshold>
    
-   
+Windows users should use the following:
+
+    cd rexault-luxury-converter
+    /Python27/python.exe code/rexconvert.py hexify <path/to/source/image.png> <value-threshold>
+
+
 This will create a directory "image" in the "output" directory, which will contain three files -- hexified_image.png, 
 image.cpp, and image.h. For example, invoking ./rexconvert hexify source_images/sample.png would create output/hexified_sample.png, sample.cpp, and sample.h. The idea is you can open up the png and have a look to make sure the conversion went ok before transferring the .ccp and .h files to the development unit to be rendered on the display.
 
